@@ -1,0 +1,7 @@
+while read -r local_ref local_sha remote_ref remote_sha; do
+  if [ "$remote_ref" = "refs/heads/main" ]; then
+    echo "✋ No se puede hacer push directo a main. Usa una rama y abre un PR."
+    exit 1
+  fi
+done
+exit 0
