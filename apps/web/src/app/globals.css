@@ -15,14 +15,21 @@
   --color-error: #ea4335;
   --color-aviso: #fbbc05;
 
-  /* Tamaños de texto (Figma) */
+    /* Tamaños de texto (Figma), cada uno con su interlineado */
+  --text-*: initial;
   --text-xs: 10px;
+  --text-xs--line-height: 1.4;
   --text-sm: 13px;
+  --text-sm--line-height: 1.45;
   --text-base: 16px;
+  --text-base--line-height: 1.4;
   --text-2xl: 26px;
+  --text-2xl--line-height: 1.45;
   --text-3xl: 30px;
+  --text-3xl--line-height: 1.4;
 
   /* Pesos (Figma) */
+  --font-weight-*: initial;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -32,6 +39,7 @@
   --leading-normal: 1.45;
 
   /* Radios (Penpot) */
+  --radius-*: initial;
   --radius-sm: 5px;
   --radius-md: 10px;
   --radius-lg: 20px;
