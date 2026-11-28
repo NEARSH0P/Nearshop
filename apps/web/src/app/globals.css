@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colores (Penpot). initial borra la paleta de Tailwind: solo existen estos */
+  --color-*: initial;
+  --color-fondo: #121212;
+  --color-superficie: #1b1b1b;
+  --color-superficie-alta: #242424;
+  --color-borde: #323232;
+  --color-texto: #ffffff;
+  --color-texto-suave: #b1b2b5;
+  --color-primario: #54c790;
+  --color-primario-claro: #87ceac;
+  --color-primario-oscuro: #567a69;
+  --color-error: #ea4335;
+  --color-aviso: #fbbc05;
+
+  /* Tamaños de texto (Figma), cada uno con su interlineado */
+  --text-*: initial;
+  --text-xs: 10px;
+  --text-xs--line-height: 1.4;
+  --text-sm: 13px;
+  --text-sm--line-height: 1.45;
+  --text-base: 16px;
+  --text-base--line-height: 1.4;
+  --text-2xl: 26px;
+  --text-2xl--line-height: 1.45;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 1.4;
+
+  /* Pesos (Figma) */
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Interlineado (Figma) */
+  --leading-tight: 1.4;
+  --leading-normal: 1.45;
+
+  /* Radios (Penpot) */
+  --radius-*: initial;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Espaciado: p-1 = 4px, p-4 = 16px */
+  --spacing: 4px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* inline porque --font-inter lo crea next/font en layout.tsx */
+  --font-sans: var(--font-inter);
 }
