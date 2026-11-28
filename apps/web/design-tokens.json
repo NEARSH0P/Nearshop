@@ -1,0 +1,75 @@
+{
+  "$description": "Tokens de diseño de Nearshop. Colores, radios y espaciado: set 'nearshop' de Penpot (archivo Empresas). Fuentes, tamaños, pesos e interlineado: diseño de Figma (landing y login). Formato W3C Design Tokens (DTCG).",
+  "color": {
+    "$type": "color",
+    "fondo": { "$value": "#121212", "$description": "Fondo de la app (modo oscuro)" },
+    "superficie": { "$value": "#1b1b1b", "$description": "Tarjetas y paneles" },
+    "superficie-alta": {
+      "$value": "#242424",
+      "$description": "Elementos sobre una superficie (inputs, menús)"
+    },
+    "borde": { "$value": "#323232" },
+    "texto": { "$value": "#ffffff" },
+    "texto-suave": {
+      "$value": "#b1b2b5",
+      "$description": "Texto secundario, etiquetas, placeholders"
+    },
+    "primario": { "$value": "#54c790", "$description": "Botones y acciones principales" },
+    "primario-claro": { "$value": "#87ceac", "$description": "Hover y fondos suaves del primario" },
+    "primario-oscuro": { "$value": "#567a69", "$description": "Estado presionado del primario" },
+    "error": { "$value": "#ea4335" },
+    "aviso": { "$value": "#fbbc05" }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "sans": {
+      "$value": ["Inter", "sans-serif"],
+      "$description": "Única fuente del diseño de Figma"
+    }
+  },
+  "text": {
+    "$type": "dimension",
+    "xs": {
+      "$value": { "value": 10, "unit": "px" },
+      "$description": "Textos muy pequeños (pies de tarjeta)"
+    },
+    "sm": {
+      "$value": { "value": 13, "unit": "px" },
+      "$description": "Texto normal, botones, subtítulos"
+    },
+    "base": { "$value": { "value": 16, "unit": "px" }, "$description": "Logo y textos destacados" },
+    "2xl": {
+      "$value": { "value": 26, "unit": "px" },
+      "$description": "Títulos de formularios (login, registro)"
+    },
+    "3xl": { "$value": { "value": 30, "unit": "px" }, "$description": "Título del hero" }
+  },
+  "font-weight": {
+    "$type": "fontWeight",
+    "normal": { "$value": 400 },
+    "semibold": { "$value": 600, "$description": "Botones" },
+    "bold": { "$value": 700, "$description": "Títulos" }
+  },
+  "leading": {
+    "$type": "number",
+    "tight": { "$value": 1.4, "$description": "140%: títulos y textos cortos" },
+    "normal": { "$value": 1.45, "$description": "145%: texto normal y formularios" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "sm": { "$value": { "value": 5, "unit": "px" } },
+    "md": { "$value": { "value": 10, "unit": "px" } },
+    "lg": { "$value": { "value": 20, "unit": "px" } },
+    "full": {
+      "$value": { "value": 9999, "unit": "px" },
+      "$description": "Botones y avatares redondos"
+    }
+  },
+  "spacing": {
+    "$type": "dimension",
+    "base": {
+      "$value": { "value": 4, "unit": "px" },
+      "$description": "Unidad base: todos los espacios son múltiplos de 4px"
+    }
+  }
+}
