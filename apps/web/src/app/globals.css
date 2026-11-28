@@ -15,7 +15,7 @@
   --color-error: #ea4335;
   --color-aviso: #fbbc05;
 
-    /* Tamaños de texto (Figma), cada uno con su interlineado */
+  /* Tamaños de texto (Figma), cada uno con su interlineado */
   --text-*: initial;
   --text-xs: 10px;
   --text-xs--line-height: 1.4;
